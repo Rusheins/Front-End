@@ -4,3 +4,8 @@ body {
 #contenido {
   width: 800px; margin: 0 auto;
 }
+.ProgIcon {
+  padding: 10px;
+  margin: 5px;
+  float: left;
+}
