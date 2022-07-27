@@ -1,13 +1,21 @@
 body {
     background-image: url("Fondo.jpg");
-    justify-content: center;
-  }
-#contenido {
-  width: 800px; margin: 0 auto;
+}
+#contenidoPerfil {
+  padding: 5px 5px 5px 300px
+}
+#contenido1 {
+  padding: 0px 0px 0px 10px;
+}
+.perfil {
+  width:130px;
+  height:130px;
+  position: absolute;
+  border-radius: 100px;
+  border: 5px solid black;
+  margin: 420px 0px 0px 50px;
 }
 .alineadoImagen {
-  float: left;
-  vertical-align: left;
   border: 4px solid black;
   border-radius: 100px;
 }
