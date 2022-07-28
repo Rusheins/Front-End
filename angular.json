@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular8": {
+    "ProyectoIntegrador_Angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular8",
+            "outputPath": "dist/proyecto-integrador-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular8:build:production"
+              "browserTarget": "ProyectoIntegrador_Angular:build:production"
             },
             "development": {
-              "browserTarget": "angular8:build:development"
+              "browserTarget": "ProyectoIntegrador_Angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular8:build"
+            "browserTarget": "ProyectoIntegrador_Angular:build"
           }
         },
         "test": {
