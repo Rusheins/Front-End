@@ -1,5 +1,5 @@
 body {
-    background-image: url("Imagenes/Fondo.jpg");
+    background-image: url(assets/Fondo.jpg);
 }
 #contenidoPerfil {
   padding: 5px 5px 5px 300px
