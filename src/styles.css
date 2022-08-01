@@ -1,11 +1,16 @@
 body {
     background-image: url(assets/Fondo.jpg);
 }
-#contenidoPerfil {
+#contenido {
   padding: 5px 5px 5px 300px
 }
-#contenido1 {
-  padding: 0px 0px 0px 10px;
+.logoAP {
+  width: 150px;
+}
+.redSocial {
+  width: 50px;
+  float: right;
+  margin-top: 25px;
 }
 .perfil {
   width:130px;
@@ -18,11 +23,6 @@ body {
 .alineadoImagen {
   border: 4px solid black;
   border-radius: 100px;
-}
-.ProgIcon {
-  padding: 10px;
-  margin: 5px;
-  float: left;
 }
 .fondoBlanco {
   background-color: white;
