@@ -5,6 +5,11 @@ body {
   margin-right: 0%;
   padding: 20px;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (min-width: 576px) {
   #perfil {
     width:15%;
@@ -34,7 +39,7 @@ body {
   width: 150px;
 }
 .redSocial {
-  width: 50px;
+  width: 60px;
   float: right;
   margin-top: 25px;
 }
@@ -47,4 +52,12 @@ body {
   border-radius: 5px; height:auto; width: auto;
   margin: 4px;
   padding: 1%;
+}
+#footer {
+ color:white;
+ font-size: 14px;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ box-shadow: 1px -1px 5px #999;
 }
