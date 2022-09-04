@@ -7,13 +7,27 @@ import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
+import { SocialComponent } from './components/social/social.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { TitulosDeEducacionComponent } from './components/titulos-de-educacion/titulos-de-educacion.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LogoAPComponent,
-    HysComponent
+    HysComponent,
+    SocialComponent,
+    PerfilComponent,
+    ExperienciaComponent,
+    TitulosDeEducacionComponent,
+    SkillsComponent,
+    ProyectosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
