@@ -1,4 +1,4 @@
-#footer {
+footer {
     color:white;
     font-size: 14px;
     display: flex;
@@ -6,7 +6,7 @@
     text-align: center;
     box-shadow: 1px -1px 5px #999;
 }
-.row {
+all {
     margin-right: 0%;
     padding: 20px;
 }
