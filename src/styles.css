@@ -1,4 +1,6 @@
-
+.all {
+  display: flex;
+}
 body {
     background-image: url(assets/Fondo.jpg);
 }
