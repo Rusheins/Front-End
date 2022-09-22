@@ -6,7 +6,8 @@ footer {
     text-align: center;
     box-shadow: 1px -1px 5px #999;
 }
-all {
+.all {
     margin-right: 0%;
     padding: 20px;
+    background-image: url(../../../assets/Fondo.jpg);
 }
