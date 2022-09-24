@@ -9,7 +9,6 @@ export class SkillItemComponent implements OnInit {
 
   @Input() imagen: string='';
   @Input() nivel: string='';
-  @Input() nivel2: string='';
   @Input() color: string='';
   constructor() { }
 

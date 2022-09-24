@@ -1,9 +1,9 @@
+body {
+  background-image: url(assets/Fondo.jpg);
+}
 /*
 .all {
   display: flex;
-}
-body {
-    background-image: url(assets/Fondo.jpg);
 }
 .row {
   margin-right: 0%;

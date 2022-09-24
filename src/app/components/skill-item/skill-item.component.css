@@ -317,3 +317,9 @@
     transform: rotate(180deg);
   }
 }
+.colorMorado {
+  background-color: rgb(117, 3, 247);
+}
+.colorVerde {
+  background-color: greenyellow;
+}
