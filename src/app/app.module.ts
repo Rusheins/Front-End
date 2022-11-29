@@ -10,6 +10,15 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { interceptorProvider } from './service/interceptor-service';
+import { FormsModule } from '@angular/forms';
+import { EditeducacionComponent } from './components/titulos-de-educacion/editeducacion.component';
+import { NeweducacionComponent } from './components/titulos-de-educacion/neweducacion.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +30,22 @@ import { SkillItemComponent } from './components/skill-item/skill-item.component
     ProyectosComponent,
     FooterComponent,
     SkillItemComponent,
+    HomeComponent,
+    LoginComponent,
+    EditeducacionComponent,
+    NeweducacionComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
