@@ -2,12 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from  '@angular/common/http';
 import { Educacion } from '../model/educacion';
 import { Observable} from 'rxjs';
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'https://localhost:4200/titulos-de-educacion/';
 
+  URL = 'https://localhost:4200/titulos-de-educacion/';
+  
+  EDUURL = environment + 'educacion/';
+  
   constructor(private httpClient : HttpClient) { }
 
   public lista(): Observable<Educacion[]>{

@@ -1,10 +1,11 @@
 <div id="fondoBlanco" style="text-align:center" class="row">
-    <h4><u>Experiencia laboral</u></h4>
+    <h4><u>Work experience:</u></h4>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
             Nueva Experiencia
         </button>
     </div>
+    <div class="col-lg-11">
     <table class="table">
         <tbody>
             <tr *ngFor="let Experiencia of expe">
@@ -23,4 +24,5 @@
             </tr>
         </tbody>
     </table>
+</div>
 </div>

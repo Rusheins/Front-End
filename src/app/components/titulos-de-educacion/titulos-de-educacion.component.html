@@ -1,7 +1,28 @@
 <div id="fondoBlanco">
+ <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
+ </div>
     <h4><u>Education:</u></h4>
-    <li><img src="../../../assets/Cooperacion.jpg" style="width: 10%;">Primary School Part. Inc n°1315 Cooperacion<br></li>
-    <li><img src="../../../assets/Gomara.png" style="width: 10%;">Secondary School technique Ing. Enrique B. Gomara n°8235<br></li>
-    <li><img src="../../../assets/Fceia.png" style="width: 10%;"><p>Studying Bachelor of Computer Science
-     at the University of Exact Sciences, Engineering and Surveying (FCEIA) in Rosario (First Year)</p></li>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
