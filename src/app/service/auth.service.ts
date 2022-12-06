@@ -10,8 +10,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
- authURL = 'http://localhost:4200/auth/';
- URL = environment + 'auth/';
+ authURL = 'http://localhost:8081/auth/';
+ URL = environment.URL + 'auth/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -20,6 +20,11 @@ export class AuthService {
   }
 
   public login(loginUsuario: LoginUsuario): Observable<JwtDto>{
+    console.log("iniciando login");
+    console.log(this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario));
     return this.httpClient.post<JwtDto>(this.authURL + 'login', loginUsuario);
+  }
+  public lista(): Observable<any>{
+    return this.httpClient.get('http://localhost:8081/personas/traer');
   }
 }

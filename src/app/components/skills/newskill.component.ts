@@ -4,13 +4,12 @@ import { Skill } from 'src/app/model/skill';
 import { SkillService } from 'src/app/service/skill.service';
 
 @Component({
-  selector: 'app-skill-item',
-  templateUrl: './skill-item.component.html',
-  styleUrls: ['./skill-item.component.css']
+  selector: 'app-newskill',
+  templateUrl: './newskill.component.html',
+  styleUrls: ['./newskill.component.css']
 })
 
-export class SkillItemComponent implements OnInit {
-  
+export class NewSkillComponent implements OnInit {
   nombre: string;
   porcentaje: number;
 

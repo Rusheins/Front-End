@@ -8,8 +8,9 @@ import { Skill } from '../model/skill';
 @Injectable({
   providedIn: 'root'
 })
+
 export class SkillService {
-  URL = environment + 'skills/';
+  URL = environment.URL + 'skills/';
   
   constructor(private httpClient: HttpClient) { }
 

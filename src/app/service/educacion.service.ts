@@ -8,10 +8,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class EducacionService {
-
-  URL = 'https://localhost:4200/titulos-de-educacion/';
   
-  EDUURL = environment + 'educacion/';
+  URL = environment.URL + 'educacion/';
   
   constructor(private httpClient : HttpClient) { }
 
