@@ -10,7 +10,8 @@ import { Skill } from '../model/skill';
 })
 
 export class SkillService {
-  URL = environment.URL + 'skills/';
+  
+  URL = environment.URL + 'skill/';
   
   constructor(private httpClient: HttpClient) { }
 

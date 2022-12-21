@@ -10,19 +10,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 
-export class  LoginComponent implements OnInit {
- isLogged = false;
- isLogginFail = false;
- loginUsuario!: LoginUsuario;
- nombreUsuario!: string;
- password! : string;
- roles : string[] = [];
- errMsj!: string;
+export class LoginComponent implements OnInit {
+  isLogged = false;
+  isLogginFail = false;
+  loginUsuario!: LoginUsuario;
+  nombreUsuario!: string;
+  password! : string;
+  roles: string[] = [];
+  errMsj!: string;
 
-  constructor(private tokenService: TokenService, private authService: AuthService, private router : Router ) { }
+  constructor(private tokenService: TokenService, private authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
-    this.authService.lista().subscribe(res=>console.log(res));
     if(this.tokenService.getToken()){
       this.isLogged = true;
       this.isLogginFail = false;
@@ -30,24 +29,22 @@ export class  LoginComponent implements OnInit {
     }
   }
 
-  onLogin():void {
-    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
-    //console.log(this.nombreUsuario+":"+this.password);
-     this.authService.login(this.loginUsuario)
-    .subscribe(data =>{
-      console.log(data);
-      this.isLogged = true;
-      this.isLogginFail = false;
-      this.tokenService.setToken(data.token);
-      this.tokenService.setUserName(data.nombreUsuario);
-      this.tokenService.setAuthorities(data.authorities);
-      this.roles = data.authorities;
-      this.router.navigate([''])
-    }, err => {
-      this.isLogged= false;
-      this.isLogginFail = true;
-      this.errMsj = err;
-      console.log(err);
-    })
+  onLogin(): void{
+    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
+    this.authService.login(this.loginUsuario).subscribe(data =>{
+        this.isLogged = true;
+        this.isLogginFail = false;
+        this.tokenService.setToken(data.token);
+        this.tokenService.setUserName(data.nombreUsuario);
+        this.tokenService.setAuthorities(data.authorities);
+        this.roles = data.authorities;
+        this.router.navigate([''])
+      }, err =>{
+        this.isLogged = false;
+        this.isLogginFail = true;
+        this.errMsj = err.error.mensaje;
+        console.log(this.errMsj);
+        
+      })
   }
 }
