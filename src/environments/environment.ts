@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  URL: 'http://localhost:8081/'
+  //URL: 'http://localhost:8081/'
+  URL: 'https://portfolio-springboot.onrender.com/'
 };
 
 /*
