@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 
 export class PersonaService {
   URL = environment.URL + 'personas/';
-  authURL = 'https://portfolio-springboot.onrender.com';
+  authURL = 'https://portfolio-springboot.onrender.com/personas/';
 
   constructor(private http: HttpClient) { }
   

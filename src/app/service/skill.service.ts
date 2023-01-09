@@ -12,7 +12,7 @@ import { Skill } from '../model/skill';
 export class SkillService {
   
   URL = environment.URL + 'skill/';
-  authURL = 'https://portfolio-springboot.onrender.com';
+  authURL = 'https://portfolio-springboot.onrender.com/skill/';
   
   constructor(private httpClient: HttpClient) { }
 

@@ -10,7 +10,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
- authURL = 'https://portfolio-springboot.onrender.com';
+ authURL = 'https://portfolio-springboot.onrender.com/auth/';
  //authURL = '';
  URL = environment.URL + 'auth/';
 

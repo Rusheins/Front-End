@@ -10,7 +10,7 @@ import { Experiencia } from '../model/experiencia';
 export class SExperienciaService {
 
   URL = environment.URL + 'explab/';
-  authURL = 'https://portfolio-springboot.onrender.com';
+  authURL = 'https://portfolio-springboot.onrender.com/explab/';
 
   constructor(private httpClient: HttpClient) { }
 
