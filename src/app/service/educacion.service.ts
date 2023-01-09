@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  
+  authURL = 'https://portfolio-springboot.onrender.com';
   URL = environment.URL + 'educacion/';
   
   constructor(private httpClient : HttpClient) { }
