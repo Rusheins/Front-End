@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  URL: 'http://localhost:8081/'
+  URL: 'https://portfolio-springboot.onrender.com/'
 };
