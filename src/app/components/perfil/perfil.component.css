@@ -1,11 +1,10 @@
 @media (min-width: 576px) {
     #perfil {
-      width:15%;
-      border-radius: 100px;
+      width:100%;
+      border-radius: 100%;
       border: 5px solid black;
-      position: absolute;
-      left: 3%;
-      bottom: -25%;
+      position: relative;
+      bottom: 40mm;
     }
 }
   @media (max-width: 575px) {
